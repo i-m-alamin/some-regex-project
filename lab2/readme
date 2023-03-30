@@ -1,0 +1,20 @@
+Documentation for lab2 Code Package
+
+This documentation describes the usage and functionality of the lab2 code package. The package contains one main class lab2 which contains two methods named web and email. The purpose of this code is to identify if the user input strings contain a website address or an email address, and if yes, in which line number of the input.
+
+Usage:
+Download and save the lab2.java file.
+Compile the file using the following command: javac lab2.java
+Run the program using the following command: java lab2
+Functionality:
+main() method:
+This is the main method of the lab2 class. It takes input from the user, validates the input for website and email addresses, and prints the result indicating the presence of the website, email or incorrect input along with the line number.
+
+web() method:
+This method is used to validate if the input string contains a valid website address or not. It uses a finite state machine to validate the website address based on a set of rules. If the string contains a valid website address, it returns true, otherwise it returns false.
+
+email() method:
+This method is used to validate if the input string contains a valid email address or not. It also uses a finite state machine to validate the email address based on a set of rules. If the string contains a valid email address, it returns true, otherwise it returns false.
+
+Note:
+This program assumes that the website and email addresses are in a specific format, as defined by the rules used in the web() and email() methods. If the addresses are not in the expected format, the program will return incorrect results or errors.
