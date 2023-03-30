@@ -1,0 +1,11 @@
+This code is a Java program that reads a file named "data.txt" and searches for different method signatures in the file. It uses regular expressions to find and extract the method signatures, and then prints out the method names and their return types.
+
+The program first creates an empty string variable called "theString" and a file object called "file" with the file name "data.txt". It then creates a scanner object called "scanner" to scan the contents of the file. The program then reads the file using a while loop that reads each line of the file and adds it to the "theString" variable until there are no more lines to read.
+
+The program then uses regular expressions to search for different types of method signatures in the "theString" variable. It uses the "Pattern" and "Matcher" classes from the "java.util.regex" package to define the regular expressions and search for matches.
+
+The program searches for three types of method signatures: public int methods, public static int methods, and public void methods. For each type of method signature, the program uses regular expressions to extract the method name and its parameters, as well as the return type of the method. It then prints out the method name and its return type.
+
+The program uses printf() method to print the results in a formatted manner. It prints the method signatures in a separate line with the return type of the method following it.
+
+Overall, this program reads a file and extracts specific method signatures using regular expressions, then prints out the method names and their return types.
