@@ -1,0 +1,17 @@
+Documentation for lab3 code package:
+
+The lab3 code package includes a Java class file named "lab3" which is designed to search a set of user-defined regular expression patterns against a set of user-defined lines of text input. The program then outputs whether each line matches any of the patterns or not.
+
+The program starts by prompting the user to enter the number of patterns they want to search for. It then initializes a String array called "pattern" with the specified number of elements and prompts the user to enter each pattern on a new line using the Scanner class.
+
+Next, the program prompts the user to enter the number of lines of text they want to check for pattern matches. It initializes a String array called "line" with the specified number of elements and prompts the user to enter each line of text on a new line using the Scanner class.
+
+The program then uses a loop to iterate through each line of text in the "line" array. For each line of text, the program uses another loop to iterate through each pattern in the "pattern" array. It creates a Pattern object using the current pattern and compiles it using the Pattern.compile() method. It then creates a Matcher object using the compiled pattern and the current line of text using the Matcher.matcher() method.
+
+If a match is found, the program outputs "YES: " followed by the index of the pattern in the "pattern" array that matched the current line of text. It then breaks out of the loop and moves on to the next line of text.
+
+If no match is found, the program outputs "NO: 0" indicating that the current line of text did not match any of the patterns in the "pattern" array.
+
+Finally, the program exits after all lines of text have been checked for pattern matches.
+
+Overall, this program provides a simple and customizable way to search for regular expression patterns in user-defined lines of text input.
